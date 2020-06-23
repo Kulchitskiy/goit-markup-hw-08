@@ -1,0 +1,19 @@
+/* Лого сайта */
+.site-logo {
+  margin-right: 85px;
+}
+.site-logo {
+  color: $title-text-color;
+
+  font-family: $secondary-font-family;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.37;
+  & span {
+    color: $accent-color;
+  }
+  & .studio-color {
+    color: $primary-white-color;
+  }
+}

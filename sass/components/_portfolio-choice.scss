@@ -1,0 +1,37 @@
+/*Страница портфоли main */
+.choice-list {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 94px;
+  padding-bottom: 50px;
+
+  & .choice-item {
+    margin-right: 8px;
+  }
+
+  & .choice-item:nth-child(5n) {
+    margin-right: 0px;
+  }
+}
+
+.choice-button {
+  padding: 6px 22px;
+  border: 0px;
+  background-color: $button-primary-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  border-radius: 4px;
+  transition: color $animation, background-color $animation;
+
+  &:focus,
+  &:hover {
+    background-color: $button-focus-color;
+    color: $primary-white-color;
+  }
+}

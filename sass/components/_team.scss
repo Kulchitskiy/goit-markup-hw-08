@@ -1,0 +1,46 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
+}
+.team-title {
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.team-item {
+  margin-right: 30px;
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
+}
+
+.photo-member {
+  margin-bottom: 30px;
+}
+.team-member {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+.member-specialty {
+  margin: 0px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: $primary-text-color;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
