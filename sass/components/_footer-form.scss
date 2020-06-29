@@ -12,7 +12,9 @@
 .form-input-footer {
   display: inline-block;
 
-  width: 358px;
+  // width: 358px;
+
+  width: 100%;
   height: 50px;
   padding-left: 0px 0px 0px 15px;
 
@@ -25,7 +27,7 @@
 }
 
 .flex-form {
-  display: flex;
+  // display: flex;
 }
 .form-label-footer {
   position: absolute;

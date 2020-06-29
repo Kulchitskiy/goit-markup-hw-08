@@ -1,0 +1,46 @@
+.border-nav {
+  position: relative;
+}
+
+.menu-hide {
+  display: none;
+  position: absolute;
+  background-color: $primary-white-color;
+  top: 100%;
+  width: 100%;
+
+  // top: 0px;
+
+  // position: absolute;
+  // background-color: $primary-white-color;
+  // bottom: 0px;
+  z-index: 4;
+
+  // display: none;
+  top: 100%;
+  // left: 0;
+
+  // right: 0px;
+}
+.menu-hide.is-open {
+  display: block;
+}
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-button .icon-x {
+  display: none;
+}
+.menu-button.is-open .icon-x {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}

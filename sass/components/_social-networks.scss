@@ -34,8 +34,12 @@
 .social-networks-footer {
   display: flex;
   margin: 0;
+  margin-bottom: 60px;
+  // margin-right: auto;
+  // margin-left: auto;
 
-  justify-content: space-around;
+  // justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 

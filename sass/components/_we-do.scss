@@ -1,6 +1,10 @@
 .we-do {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 
   & .title {
     margin-bottom: 50px;

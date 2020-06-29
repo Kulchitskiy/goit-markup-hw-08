@@ -3,17 +3,20 @@
   flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 94px;
+  // padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 .portfolio-block {
-  width: 370px;
-  height: 110px;
+  // width: 370px;
+  // height: 110px;
+  width: 100%;
   padding: 20px 24px;
 }
 .portfolio-item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  // width: calc((100% - 60px) / 3);
+  // margin-right: 30px;
+  // margin-bottom: 30px;
+  width: 100%;
 
   border: 1px solid #eeeeee;
   border-radius: 5px;
@@ -22,9 +25,12 @@
   &:nth-child(3n) {
     margin-right: 0;
   }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0;
+  // }
   &:hover {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);

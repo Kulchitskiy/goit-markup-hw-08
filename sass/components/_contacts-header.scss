@@ -1,9 +1,12 @@
 // Список контактов
 .site-contacts {
-  display: flex;
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
 
-  padding: 0px;
+  // padding: 0px;
   margin: 0px;
+  padding-bottom: 60px;
 }
 .contacts-link {
   display: block;
@@ -23,8 +26,12 @@
   }
 }
 
+// .contacts-item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
 .contacts-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 16px;
 }
 
 .icon-contact {

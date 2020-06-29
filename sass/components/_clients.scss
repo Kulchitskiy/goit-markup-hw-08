@@ -7,19 +7,29 @@
 }
 .clients .list {
   display: flex;
+  flex-wrap: wrap;
+
   margin-top: 0px;
   margin-bottom: 0px;
   align-items: center;
+  margin: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .client-item {
-  display: flex;
-  width: 175px;
-  height: 90px;
+  // display: flex;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  margin: 15px;
+
+  // width: 175px;
+  // height: 90px;
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .client-link {
@@ -28,7 +38,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 170px;
+  width: 210px;
   height: 90px;
   transition: color $animation;
   color: #afb1b8;

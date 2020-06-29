@@ -1,7 +1,11 @@
 /* Лого сайта */
 .site-logo {
-  margin-right: 85px;
+  // margin-right: 85px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 16px;
 }
+
 .site-logo {
   color: $title-text-color;
 
