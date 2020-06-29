@@ -2,21 +2,17 @@
 .choice-list {
   display: flex;
   flex-wrap: wrap;
+
   // justify-content: center;
   margin: 0px;
   padding: 0px;
   padding-top: 60px;
   padding-bottom: 40px;
-  // padding-top: 94px;
-  // padding-bottom: 50px;
 
   & .choice-item {
     margin-right: 8px;
   }
 
-  // & .choice-item:nth-child(5n) {
-  //   margin-right: 0px;
-  // }
   & .choice-item {
     margin-bottom: 15px;
   }
@@ -27,6 +23,17 @@
   & .choice-item:nth-child(5n) {
     margin-bottom: 0px;
     margin-right: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    padding-bottom: 30px;
+    & .choice-item {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 50px;
   }
 }
 

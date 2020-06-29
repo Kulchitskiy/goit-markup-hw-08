@@ -1,12 +1,14 @@
 // Список контактов
 .site-contacts {
-  // display: flex;
-  // flex-direction: column;
   text-align: center;
 
   // padding: 0px;
   margin: 0px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .contacts-link {
   display: block;

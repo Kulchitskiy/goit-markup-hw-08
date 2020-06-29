@@ -9,18 +9,14 @@
   top: 100%;
   width: 100%;
 
-  // top: 0px;
-
-  // position: absolute;
-  // background-color: $primary-white-color;
-  // bottom: 0px;
   z-index: 4;
 
-  // display: none;
   top: 100%;
-  // left: 0;
 
-  // right: 0px;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: static;
+  }
 }
 .menu-hide.is-open {
   display: block;
@@ -34,6 +30,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .menu-button .icon-x {
   display: none;

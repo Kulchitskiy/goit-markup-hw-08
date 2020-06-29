@@ -2,7 +2,6 @@
   background: #2f303a;
 }
 .down {
-  // display: flex;
   align-items: baseline;
   text-align: center;
 
@@ -11,6 +10,11 @@
   padding-bottom: 60px;
   padding-left: auto;
   padding-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: inherit;
+  }
 }
 
 .address {
@@ -22,12 +26,25 @@
 .address-flex {
   // margin-right: 69px;
   padding-right: 12px;
+  @media screen and (min-width: 768px) {
+    margin-left: 61px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
+    margin-right: 69px;
+  }
 
   & .site-logo {
     display: inline-block;
     // margin-bottom: 10px;
     margin-bottom: 20px;
     margin-right: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    & .site-logo {
+      margin: 0px;
+      margin-bottom: 10px;
+    }
   }
 }
 .address-list {
@@ -39,9 +56,15 @@
   &:nth-child(2) {
     margin-bottom: 60px;
   }
-  // & li:first-child {
-  //   margin-bottom: 9px;
-  // }
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
+    & li:first-child {
+      margin-bottom: 9px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .street {
@@ -52,6 +75,9 @@
   margin: 0px;
   // margin-bottom: 9px;
   margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .follow {
@@ -69,6 +95,19 @@
   // margin-right: 94px;
   & .social-networks {
     padding-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0px;
+    margin-right: 94px;
+  }
+}
+.tablet-flex {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 

@@ -15,6 +15,11 @@
   &:focus {
     color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    // display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 // Декоративный псевдоэлеиент
@@ -41,16 +46,23 @@
   padding-top: 60px;
   padding-bottom: 20px;
   font-size: 14px;
-  text-align: center;
+  // text-align: center;
   // align-items: center;
   & .item {
     margin-bottom: 40px;
   }
 
-  // & .item {
-  //   margin-right: 50px;
-  // }
-  // & .item:nth-child(3n) {
-  //   margin-right: 0px;
-  // }
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    padding: 0px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+  }
+  & .item {
+    margin-right: 50px;
+  }
+  & .item:nth-child(3n) {
+    margin-right: 0px;
+  }
 }

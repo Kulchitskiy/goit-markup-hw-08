@@ -13,10 +13,6 @@
   margin-bottom: 0px;
   align-items: center;
   margin: -15px;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 }
 
 .client-item {
@@ -37,9 +33,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 0px;
 
   width: 210px;
   height: 90px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
   transition: color $animation;
   color: #afb1b8;
   border: 1px solid #afb1b8;
