@@ -2,8 +2,17 @@
 .site-logo {
   // margin-right: 85px;
   display: inline-block;
-  margin-left: 15px;
+  // margin-left: 15px;
   margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 81px;
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+  }
 }
 
 .site-logo {

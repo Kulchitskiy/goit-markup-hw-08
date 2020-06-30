@@ -1,6 +1,6 @@
 .list-item {
   position: relative;
-  display: inline;
+  display: inline-block;
   // padding-top: 32px;
   // padding-bottom: 32px;
   color: $title-text-color;
@@ -16,7 +16,6 @@
     color: $accent-color;
   }
   @media screen and (min-width: 768px) {
-    // display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -28,7 +27,7 @@
   display: inline-block;
   position: absolute;
   // bottom: 0px;
-  bottom: -8px;
+  bottom: -2px;
   left: 0px;
 
   width: 100%;
@@ -49,20 +48,28 @@
   // text-align: center;
   // align-items: center;
   & .item {
+    // margin-right: 0px;
     margin-bottom: 40px;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
 
     padding: 0px;
     // padding-top: 32px;
     // padding-bottom: 32px;
+
+    & .item {
+      margin-bottom: 0px;
+      margin-right: 50px;
+    }
+    & .item:nth-child(3n) {
+      margin-right: 64px;
+    }
   }
-  & .item {
-    margin-right: 50px;
-  }
-  & .item:nth-child(3n) {
-    margin-right: 0px;
+  @media screen and (min-width: 1200px) {
+    & .item:nth-child(3n) {
+      margin-right: 305px;
+    }
   }
 }

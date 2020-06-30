@@ -1,15 +1,26 @@
 // Список контактов
 .site-contacts {
-  text-align: center;
+  // text-align: center;
 
   // padding: 0px;
   margin: 0px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: flex-end;
+    padding-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
   }
 }
+// .site-nav {
+//   display: inline-flex;
+// }
+
 .contacts-link {
   display: block;
   display: inline-flex;
@@ -18,7 +29,7 @@
   color: $primary-text-color;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
 
@@ -26,14 +37,30 @@
   &:focus {
     color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 }
-
-// .contacts-item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .contacts-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
 
 .icon-contact {

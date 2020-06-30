@@ -1,5 +1,8 @@
 .border-nav {
   position: relative;
+  @media screen and (min-width: 768px) {
+    height: auto;
+  }
 }
 
 .menu-hide {
@@ -8,14 +11,19 @@
   background-color: $primary-white-color;
   top: 100%;
   width: 100%;
+  left: 0px;
 
   z-index: 4;
 
-  top: 100%;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
-    display: block;
+    display: inline-flex;
     position: static;
+    // justify-content: center;
+    width: auto;
+    text-align: start;
+    align-items: center;
   }
 }
 .menu-hide.is-open {
