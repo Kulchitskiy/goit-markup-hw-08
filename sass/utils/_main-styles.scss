@@ -50,9 +50,15 @@ body.modal-open {
   text-align: center;
   margin-bottom: 50px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .img-block {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .visualy-hidden {
   position: absolute;
