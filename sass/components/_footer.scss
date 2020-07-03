@@ -92,7 +92,6 @@
 }
 
 .footer-flex {
-  // margin-right: 94px;
   & .social-networks {
     padding-bottom: 0px;
   }
@@ -106,7 +105,7 @@
 }
 .tablet-flex {
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
     align-items: baseline;
   }
 }

@@ -20,7 +20,7 @@
   @media screen and (min-width: 768px) {
     display: inline-flex;
     position: static;
-    // justify-content: center;
+
     width: auto;
     text-align: start;
     align-items: center;
@@ -51,4 +51,13 @@
 }
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+// .icon-x:focus,
+.icon-x:hover {
+  fill: $accent-color;
+}
+// .menu-button:focus,
+.menu-button:hover {
+  fill: $accent-color;
 }
