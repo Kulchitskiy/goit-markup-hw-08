@@ -35,7 +35,6 @@
   transition: transform 250ms linear;
 
   .checkbox:checked + & {
-    /* transform: scale(1.2); */
     border-color: transparent;
     background-color: $accent-color;
 
@@ -65,9 +64,7 @@
   color: $accent-color;
   line-height: 1;
 }
-// .checkbox:checked ~ .label {
-//   transform: translateX(20px);
-// }
+
 .form-send {
   height: 50px;
   min-width: 200px;

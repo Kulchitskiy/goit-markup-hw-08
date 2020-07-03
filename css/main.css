@@ -1379,7 +1379,6 @@ img {
 }
 
 .checkbox:checked + .icon-checkbox {
-  /* transform: scale(1.2); */
   border-color: transparent;
   background-color: #2196f3;
   background-size: contain;
