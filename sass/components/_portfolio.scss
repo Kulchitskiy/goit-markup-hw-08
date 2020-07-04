@@ -6,19 +6,25 @@
 
   padding-bottom: 60px;
   margin: -15px;
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
   }
 }
 .portfolio-block {
   width: 100%;
+
   padding: 20px 24px;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
 }
 .portfolio-item {
   // width: calc((100% - 60px) / 3);
   // margin-right: 30px;
   // margin-bottom: 30px;
   width: 100%;
+  margin: 15px;
 
   border: 1px solid #eeeeee;
   border-radius: 5px;
@@ -101,9 +107,9 @@
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
 }
 .portfolio-description {
   margin: 0px;
