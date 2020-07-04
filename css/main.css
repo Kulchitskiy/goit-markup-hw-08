@@ -1198,20 +1198,25 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
   text-align: center;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1349,9 +1354,9 @@ img {
 }
 
 .close-modal {
-  position: absolute;
-  right: 8px;
-  top: 8px;
+  position: static;
+  margin-right: 8px;
+  margin-top: 8px;
   width: 30px;
   height: 30px;
   padding: 0px;
@@ -1361,8 +1366,27 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) {
+  .close-modal {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    margin: 0px;
+  }
+}
+
 .close-modal:hover, .close-modal:focus {
   fill: #2196f3;
+}
+
+.position-button {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /* Форма Чекбокса */
@@ -1544,6 +1568,9 @@ img {
 .portfolio-block {
   width: 100%;
   padding: 20px 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .portfolio-item {
