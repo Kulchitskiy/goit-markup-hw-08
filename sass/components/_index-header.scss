@@ -3,9 +3,11 @@
   width: 100%;
 
   border-bottom: 1px solid #ececec;
+  // align-items: center;
 }
 .site-header {
+  // position: relative;
   display: flex;
-
+  justify-content: space-between;
   align-items: center;
 }

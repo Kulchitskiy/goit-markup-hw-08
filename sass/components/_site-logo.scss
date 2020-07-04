@@ -28,4 +28,7 @@
   & .studio-color {
     color: $primary-white-color;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 }
